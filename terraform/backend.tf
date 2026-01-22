@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket       = "terraform-state-df_picpay"
+    bucket       = "terraform-state-df-picpay"
     key          = "df-picpay-simplificado/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true

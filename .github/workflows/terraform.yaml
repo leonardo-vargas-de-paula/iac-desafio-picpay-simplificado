@@ -33,7 +33,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5.1.1
         with: 
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          region: us-east-1
+          aws-region: us-east-1
 
       - name: HashiCorp - Setup Terraform
         uses: hashicorp/setup-terraform@v3.1.2

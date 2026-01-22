@@ -1,7 +1,7 @@
 name: terraform-CI/CD-picpay
 
 on:
-  worflow_dispatch:
+  workflow_dispatch:
     inputs:
       plan-infra:
         description: 'Planejar o provisionamento de infra?'

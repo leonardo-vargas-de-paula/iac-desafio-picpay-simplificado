@@ -49,7 +49,7 @@ jobs:
 
       - name: terraform plan
         env:
-          TF_VAR_ip_ssh: ${{ secrets.IP_SSH }}
+          TF_VAR_ip_ssh: ${{ secrets.SSH_IP }}
         run: terraform plan -out=plan
         if: github.event.inputs.plan-infra=='true'
 
